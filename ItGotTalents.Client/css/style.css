@@ -1,6 +1,127 @@
-body{
-	background-image: url(../img/background.jpeg);
+html {
+  position: relative;
+  min-height: 100%;
 }
+
+body{
+	background-image: url(../img/code-wallpaper.jpg);
+	 margin-bottom: 60px;
+}
+
+.container{
+	position: relative;
+}
+.brand{
+	font-size: 40px;
+	line-height: 1.5em;
+}
+.address-bar{
+	font-size: 15px;
+}
+
 #carousel-example-generic {
-	height: 300px;
+	height: 350px;
+}
+
+
+
+.carousel-inner a{
+	font-size: 70px;
+	position: relative;
+	display: inline-block;
+	margin-top: 10%;
+	text-decoration: none;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media screen and (max-width:768px) {
+	.carousel-inner a{
+	font-size: 30px;
+	margin-top: 150px;
+	}
+}
+
+@media screen and (min-width:1300px) {
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 30px 0 10px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 5em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 40px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1.25em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+        border: none;
+        background: #fff;
+        background: rgba(255,255,255,0.9);
+    }
+
+    .nav>li>a {
+        padding: 35px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(255,255,255,0.8);
+  text-align: center;
+}
+
+.footer p{
+	margin-top: 15px;
 }
