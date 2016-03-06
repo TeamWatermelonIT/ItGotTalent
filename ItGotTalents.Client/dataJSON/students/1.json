@@ -1,0 +1,13 @@
+{
+  "id" : 1,
+  "firstName": "Dragomir",
+  "lastName" : "Mildov",
+  "middleName": "Emilov",
+  "city": "Sofia",
+  "strAddress": "Tcvetna Gradina N71a",
+  "email": "drashoo@abv.bg",
+  "img": "http://placehold.it/450x250",
+  "urlPage": "google.bg",
+  "phone": "0889358720",
+  "skills": ["java", "JavaScript"]
+}

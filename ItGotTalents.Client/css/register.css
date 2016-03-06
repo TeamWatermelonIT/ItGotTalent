@@ -57,3 +57,14 @@ html {
 .footer p{
 	margin-top: 15px;
 }
+
+
+input.ng-invalid.ng-dirty.form-validation{
+    background-color: pink;
+}
+input.ng-valid.ng-dirty.form-validation{
+    background-color: greenyellow;
+}
+
+
+
