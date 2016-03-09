@@ -11,7 +11,6 @@
 |
 */
 
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -23,28 +22,30 @@
 |
 */
 
-//Route::group(['middleware' => ['web']], function () {
-//    //
-//});
+Route::get('/', 'HomeController@index');
 
-Route::group(['middleware' => 'web'], function () {
-    Route::auth();
-    Route::group(
-        ['prefix' => 'api'],
-        function() {
-            Route::get('/', 'HomeController@index');
-            Route::get('projects/{id}', 'ProjectsController@show');
-        });
-
-
-});
+Route::group(
+    ['middleware' => 'web'],
+    function () {
+        Route::auth();
+        Route::group(
+            ['prefix' => 'api'],
+            function () {
+                Route::get('projects/{id}', 'ProjectsController@show');
+                Route::post('projects', 'ProjectsController@store');
+            }
+        );
+    }
+);
 Route::group(
     ['prefix' => 'api'],
-    function() {
+    function () {
         Route::get('/', 'HomeController@index');
+        Route::get('user/{id}', 'StudentsController@index');
         Route::get('students', 'StudentsController@index');
         Route::get('students/{id}', 'StudentsController@show');
         Route::get('students/{id}/projects', 'ProjectsController@showByStudentId');
         Route::get('projects', 'ProjectsController@index');
         Route::get('projects/{id}', 'ProjectsController@show');
-    });
+    }
+);
