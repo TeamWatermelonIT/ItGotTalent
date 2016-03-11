@@ -8,9 +8,9 @@ app.controller('register', function($scope,regLoginLogout){
 
         $scope.flagPass = false;
         if(!newUserForm.$valid){
-            regLoginLogout.saveStudent(function(user){
-
-            });
+            //regLoginLogout.saveStudent(function(user){
+            //
+            //});
 
             return;
         }else if(user.pass1 !== user.pass2){
