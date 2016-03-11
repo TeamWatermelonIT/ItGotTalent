@@ -1,0 +1,22 @@
+<h1 class="text-center"> STUDENTS </h1>
+<div class="col-lg-5 panel" ng-repeat="student in student">
+        <div class="box">
+                <div class="panel-body">
+                        <div class="panel-body col-lg-6 col-md-6 col-sm-6">
+                                <p>name: <a href="#/students/{{student.id}}"><strong>{{student.name}}</strong></a></p>
+                                <p>gender:  {{student.gender}}</p>
+                                <p>course:  {{student.course}}</p>
+                                <p>email:   {{student.email}}</p>
+                                <p>season:  {{student.season}}</p>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                <img src="{{student.photoUrl}}">
+                        </div>
+                        <div class="text-primary col-sm-7">
+                                <h4>projects</h4>
+                                <a href="#/projects/{{project.id}}" ng-repeat="project in student.projects" class="smallText">{{project.name}}</a>
+                        </div>
+                </div>
+        </div>
+</div>
+

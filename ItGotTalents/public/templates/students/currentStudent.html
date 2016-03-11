@@ -1,0 +1,60 @@
+
+<div class="wrapper" >
+
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h1 class=" text-center">{{student.name}}</h1>
+        </div>
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center">
+                    <img src="{{student.photoUrl}}" class="img-circle img-responsive">
+                </div>
+
+
+                <div class=" col-md-9 col-lg-9 ">
+                    <table class="table table-user-information">
+                        <tbody>
+                        <tr>
+                            <td>Department:</td>
+                            <td>Programming</td>
+                        </tr>
+                        <tr>
+                            <td>Season:</td>
+                            <td>{{student.season}}</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>{{student.email}}</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>{{student.gender}}</td>
+                        </tr>
+                        <tr>
+                            <td>Date of birth</td>
+                            <td>{{student.dateOfBirth | date : format : timezone}}</td>
+                        </tr>
+                        <tr>
+                            <td>Course</td>
+                            <td>{{student.course}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <button class="btn btn-primary" ng-click="showMyProjects()">My projects</button>
+                    <!--<button class="btn btn-primary">Team projects</button>-->
+                    <div class="panel panel-default" ng-show="showProjects">
+                        <ul>
+                           <li ng-repeat=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>
