@@ -11,10 +11,10 @@
     <title>IT Got Talent</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../../public/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../public/lib/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../../public/css/business-casual.css" rel="stylesheet">
+    <link href="../../public/lib/css/business-casual.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
@@ -26,7 +26,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="../../public/css/style.css" />
+    <link rel="stylesheet" href="../../public/styles/style.css" />
     <style>
     .smallText{
         font-size: 12px;
@@ -59,7 +59,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="">Home</a></li>
+                <li class="active"><a href="#/home">Home</a></li>
                 <li><a href="#/students">Students<span class="sr-only"></span></a></li>
                 <li><a href="#/projects">Projects</a></li>
                 <li><a href="#/register">Register</a></li>
@@ -101,25 +101,23 @@
 </footer>
 
 
-<script src="../../public/js/lib/jquery.js"></script>
-<script src="../../public/js/lib/bootstrap.min.js"></script>
-<script src="../../public/js/lib/angular-1.4.9/angular.js"></script>
-<script src="../../public/js/lib/angular-1.4.9/angular-resource.js"></script>
-<script src="../../public/js/lib/angular-1.4.9/angular-route.js"></script>
-<script src="../../public/js/app.js"></script>
-<script src="../../public/js/controllers/allStudents.js"></script>
-<script src="../../public/js/controllers/student.js"></script>
-<script src="../../public/js/controllers/projects.js"></script>
-<script src="../../public/js/controllers/currentProject.js"></script>
-<script src="../../public/js/controllers/register.js"></script>
-<script src="../../public/js/services/data/allStudentsData.js"></script>
-<script src="../../public/js/services/data/currentStudent.js"></script>
-<script src="../../public/js/services/data/regLoginLogout.js"></script>
-<script src="../../public/js/services/authentication.js"></script>
-<script src="../../public/js/services/data/projects.js"></script>
+<script src="../../public/lib/jquery.js"></script>
+<script src="../../public/lib/bootstrap.min.js"></script>
+<script src="../../public/lib/angular-1.4.9/angular.js"></script>
+<script src="../../public/lib/angular-1.4.9/angular-resource.js"></script>
+<script src="../../public/lib/angular-1.4.9/angular-route.js"></script>
+<script src="../../public/app/js/app.js"></script>
+<script src="../../public/app/js/students/ctrl-students.js"></script>
+<script src="../../public/app/js/students/ctrl-students-details.js"></script>
+<script src="../../public/app/js/projects/ctrl-projects.js"></script>
+<script src="../../public/app/js/projects/ctrl-projects-details.js"></script>
+<script src="../../public/app/js/register/ctrl-register.js"></script>
+<script src="../../public/app/js/students/service-student.js"></script>
+<script src="../../public/app/js/students/service-students-details.js"></script>
+<script src="../../public/app/js/register/service-regLoginLogout.js"></script>
+<script src="../../public/app/js/register/service-authentication.js"></script>
+<script src="../../public/app/js/projects/service-projects.js"></script>
 
 
-<script src="/js/vendor.js"></script>
-<script src="/js/app.js"></script>
 </body>
 </html>

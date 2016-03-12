@@ -1,4 +1,4 @@
-app.factory('authentication',function(){
+app.factory('service_authentication',function(){
 
     // TO DO
 

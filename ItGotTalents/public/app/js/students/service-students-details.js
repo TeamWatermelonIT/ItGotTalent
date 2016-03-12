@@ -1,6 +1,6 @@
-app.factory('getCurrentStudent',function($resource, baseUrl, $http, $log){
+app.factory('service_student_details',function($resource, baseUrl, $http, $log){
 
-    console.log(' getCurrentStudent is ready' );
+    console.log('service-student-details is ready' );
 
     var resource = $resource(baseUrl + '/students/:id' + {id:'@id'});
 

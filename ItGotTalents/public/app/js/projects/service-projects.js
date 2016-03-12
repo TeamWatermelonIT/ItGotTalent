@@ -1,11 +1,11 @@
-app.factory('projects',function($resource, $http){
+app.factory('service_projects',function($resource, baseUrl, $http){
 
-    console.log('allProjects service is READY');
+    console.log('service-projects is ready');
 
 
     return{
         getProjects: function(successCB){
-            $http({method: 'GET', url: 'http://localhost/ItGotTalents/ItGotTalents/public/api/projects'})
+            $http({method: 'GET', url: baseUrl + '/projects'})
                 .success(function(data,status,headers,config){
                     successCB(data);
                 })

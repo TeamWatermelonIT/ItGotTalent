@@ -1,6 +1,6 @@
-app.controller('register', function($scope,regLoginLogout){
+app.controller('ctrl-register', function($scope,service_regLoginLogout){
 
-    console.log('register controller is ready ! ! !');
+    console.log('ctrl-register is ready ! ! !');
 
 
 

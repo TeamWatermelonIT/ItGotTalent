@@ -1,6 +1,6 @@
-app.factory('regLoginLogout',function($http, baseUrl, $resource, authentication){
+app.factory('service_regLoginLogout',function($http, baseUrl, $resource, service_authentication){
 
-    console.log('register service is ready');
+    console.log('service-regLoginLogout is ready');
 
     var resource = $resource(baseUrl + '/');
 
@@ -19,7 +19,7 @@ app.factory('regLoginLogout',function($http, baseUrl, $resource, authentication)
     return{
         registerStudent : registerStudent,
         logInStudent : logInStudent,
-        logoutUser : logoutUser()
+        logoutUser : logoutUser
 
     };
 
