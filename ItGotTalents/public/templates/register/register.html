@@ -8,9 +8,9 @@
             </h2>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, vitae, distinctio, possimus repudiandae cupiditate ipsum excepturi dicta neque eaque voluptates tempora veniam esse earum sapiente optio deleniti consequuntur eos voluptatem.</p>
-            <form role="form" name="newUserForm">
+            <form role="form" name="newUserForm"class="col-lg-6" >
                 <div class="row">
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Name</label>
                         <input type="text"
                                name="name"
@@ -19,7 +19,7 @@
                                required="required"
                                ng-model="user.firstName">
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Password</label>
                         <input type="password"
                                name="password1"
@@ -34,7 +34,7 @@
                         </p>
 
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Repeat Password</label>
                         <input type="password"
                                class="form-control form-validation"
@@ -44,26 +44,26 @@
                            ng-if = "flagPass">Invalid password repeat
                         </p>
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Country</label>
                         <input type="text"
                                class="form-control form-validation"
                                ng-model="user.country">
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Email</label>
                         <input type="text"
                                class="form-control form-validation"
                                ng-model="user.email">
 
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Phone Number</label>
                         <input type="text" class="form-control form-validation"
                                ng-pattern="/^[0-9]+$/"
                                ng-model="user.phone">
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>Photo</label>
                         <input type="text"
                                placeholder="url"
@@ -71,7 +71,7 @@
                                ng-pattern= "/(https?:\/\/.*\.(?:png|jpg|gif))/"
                                ng-model="user.photo">
                     </div>
-                    <div class="form-group col-lg-4">
+                    <div class="form-group ">
                         <label>CV</label>
                         <input type="file" class="form-control" ng-model="user.CV">
                     </div>
@@ -87,6 +87,9 @@
                     </div>
                 </div>
             </form>
+            <div class="col-lg-5">
+                <img src="{{user.photo}}">
+            </div>
         </div>
     </div>
 </div>

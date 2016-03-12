@@ -1,8 +1,27 @@
-app.factory('regLoginLogout',function($http, baseUrl, $resource, autenthication){
-
+app.factory('regLoginLogout',function($http, baseUrl, $resource, authentication){
 
     console.log('register service is ready');
 
+    var resource = $resource(baseUrl + '/');
+
+
+    function registerStudent(user){
+        return $resource(baseUrl + 'user/register').save(user)
+    }
+
+    function logInStudent(user){
+
+    }
+
+    function logoutUser(){
+
+    }
+    return{
+        registerStudent : registerStudent,
+        logInStudent : logInStudent,
+        logoutUser : logoutUser()
+
+    };
 
     //return{
     //    saveStudent: function(successCB){
@@ -15,10 +34,6 @@ app.factory('regLoginLogout',function($http, baseUrl, $resource, autenthication)
     //            })
     //    }
     //};
-
-
-
-
 
 
 });

@@ -9,6 +9,10 @@ app.config(function($routeProvider){
         templateUrl: '../../public/templates/home/home.html',
         controller : ''
     });
+    $routeProvider.when('/carousel-example-generic', {
+        templateUrl: '../../public/templates/home/home.html',
+        controller : ''
+    });
     $routeProvider.when('/', {
         templateUrl: '../../public/templates/home/home.html',
         controller : ''

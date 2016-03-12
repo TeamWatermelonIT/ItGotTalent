@@ -5,7 +5,7 @@ app.factory('authentication',function(){
     var key = 'user';
 
 
-    function saveUserData(data){
+    function saveStudentData(data){
         localStorage.setItem(key, angular.toJson(data));
     }
 
@@ -19,7 +19,7 @@ app.factory('authentication',function(){
 
 
     return {
-        saveUser : saveUserData,
+        saveStudent : saveStudentData,
         getUser : getUserData
     }
 
