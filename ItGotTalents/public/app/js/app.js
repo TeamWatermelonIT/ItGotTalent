@@ -18,7 +18,7 @@ app.config(function($routeProvider){
         controller : ''
     });
     $routeProvider.when('/students', {
-        templateUrl: '../../public/views/students/view-students.html',
+        templateUrl: '../../public/views/students/view-students-01.html',
         controller : 'ctrl-students'
     });
 
@@ -31,7 +31,7 @@ app.config(function($routeProvider){
         controller : 'ctrl-projects'
     });
     $routeProvider.when('/projects/:id', {
-        templateUrl: '../../public/views/projects/view-project-details.html',
+        templateUrl: '../../public/views/projects/view-projects-details.html',
         controller : 'ctrl-project'
     });
     $routeProvider.when('/register', {

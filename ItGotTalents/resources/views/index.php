@@ -27,6 +27,7 @@
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="../../public/styles/style.css" />
+    <link rel="stylesheet" href="../../public/styles/round-about.css">
     <style>
     .smallText{
         font-size: 12px;
@@ -53,7 +54,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">IT Got Talents</a>
+            <a class="navbar-brand" href="#/home">IT Got Talents</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -64,12 +65,7 @@
                 <li><a href="#/projects">Projects</a></li>
                 <li><a href="#/register">Register</a></li>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+
             <form class="navbar-form navbar-right" role="search">
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="Username">
